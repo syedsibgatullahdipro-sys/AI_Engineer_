@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Engineer</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+  color: #6C63FF;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Neon animated background */
+body::before {
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #6C63FF22, transparent 40%);
+  animation: moveBg 10s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveBg {
+  from { transform: translate(0,0); }
+  to { transform: translate(-50%, -50%); }
+}
+
+header {
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 36px;
+  text-shadow: 0 0 15px #6C63FF;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #6C63FF; }
+  to { text-shadow: 0 0 25px #6C63FF; }
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #6C63FF;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 0 20px #6C63FF33;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #6C63FF;
+}
+
+button {
+  background: #6C63FF;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+footer {
+  padding: 20px;
+  color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🚀 AI Engineer Hub</h1>
+  <p>Web • Bots • AI Innovation</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>👨‍💻 About</h2>
+    <p>Building futuristic AI tools, smart web apps, and automation systems.</p>
+  </div>
+
+  <div class="card">
+    <h2>🛠 Services</h2>
+    <p>Telegram Bots • Web Development • AI Projects</p>
+    <button onclick="alert('Contact feature coming soon!')">
+      Contact Me
+    </button>
+  </div>
+
+  <div class="card">
+    <h2>🌐 Projects</h2>
+    <p>Next-gen digital solutions powered by AI.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 AI Engineer | Powered by GitHub Pages
+</footer>
+
+</body>
+</html>
